@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/pizzialogo.webp">
+</head>
+<body>
+    <script src="js/myscript.js"></script>
+	<div class="container">
+        <h1>Pizza Order Form</h1>
+		<form name="myForm" action= "mailto:oluwatobiabdulazeez33@gmail.com" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">  Location: <input type="text" name="fname"> <br><br>
+     
+                <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br><br>
+            
+            <label>Toppings:</label><br>
+            <input type="checkbox" id="cheese" name="topping" value="cheese">
+            <label for="cheese">Cheese</label><br>
+            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+            <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+            <input type="checkbox" id="olives" name="topping" value="olives">
+            <label for="olives">Olives</label><br><br>
+            
+            <label for="instructions">Special Instructions:</label><br>
+            <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea><br><br>
+            
+           
+			<input type="submit" value="Submit">
+        </form>
+        <p id="studentInfo"></p>
+        <div id="pizzaOutput"></div>
+    </div>
+    <script defer src="js/myscript.js"></script>
+</body>
+</html>
